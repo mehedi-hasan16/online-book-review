@@ -6,23 +6,23 @@ const BookCard = ({ book }) => {
   return (
     <div>
       <Link to={`/bookDetails/${bookId}`}>
-      <div className="card bg-base-100 w-96 shadow-xl">
-        <figure className="px-10 pt-10">
+      <div className="card bg-base-100 w-96 shadow-xl h-full flex flex-col">
+        <figure>
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-            className="rounded-xl"
+            src={image}
+            alt={bookName}
+            className="h-96 w-full object-cover"
           />
         </figure>
-        <div className="card-body">
-          <div>
+        <div className="card-body flex-grow">
+          <div className="flex gap-3 justify-center items-center">
             {tags.map((e, idx) => (
-              <span
+              <p
                 key={idx}
-                className="text-green-500 bg-slate-200 font-semibold mr-1 mb-1 p-1 rounded"
+                className="text-green-500 bg-slate-100 font-semibold p-2 rounded"
               >
-                {e}
-              </span>
+                #{e}
+              </p>
             ))}
           </div>
           <h2 className="card-title font-bold text-2xl">{bookName}</h2>

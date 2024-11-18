@@ -18,13 +18,14 @@ const BookDetails = () => {
     yearOfPublishing,
     rating,
     bookId,
+    image
   } = singleBook;
   return (
     <div className="font-semibold">
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            src={image}
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
@@ -45,6 +46,7 @@ const BookDetails = () => {
             ))}</p>
             <div className="divider"></div>
             <p className="my-5"><span className="text-slate-500">Number of Pages: </span> {totalPages}</p>
+            <p className="my-5"><span className="text-slate-500">Number of Pages: </span> {publisher}</p>
             <p><span className="text-slate-500">Year of Publishing: </span>{yearOfPublishing}</p>
             <p className="my-5"><span className="text-slate-500">Rating: </span>{rating}</p>
             <button className="btn btn-outline mr-5">Read</button>
