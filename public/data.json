@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "image": "https://example.com/the_silent_patient.jpg",
+      "review": "Alex Michaelides delivers a riveting psychological thriller that keeps readers on edge until the last page. 'The Silent Patient' tells the story of Alicia Berenson, a celebrated artist who inexplicably murders her husband and then goes completely silent. The narrative, guided by Theo Faber, a psychotherapist determined to uncover the truth, is a masterclass in suspense and character study. Michaelides weaves a complex tale of trust, betrayal, and psychological trauma, leading to a jaw-dropping climax that is as surprising as it is satisfying. The book is a must-read for fans of psychological mysteries, offering a gripping exploration of the human mind and the secrets it can hide.",
+      "totalPages": 336,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Suspense", "Psychological", "Thriller"],
+      "publisher": "Celadon Books",
+      "yearOfPublishing": 2019
+    },
+    {
+      "bookId": 2,
+      "bookName": "Atomic Habits",
+      "author": "James Clear",
+      "image": "https://example.com/atomic_habits.jpg",
+      "review": "James Clear's 'Atomic Habits' is an insightful and practical guide for anyone looking to build positive habits or break negative ones. The book introduces readers to the concept of tiny, incremental changes that compound over time to bring about significant results. Clear effectively combines scientific research with real-life examples, making complex psychological principles easy to understand and apply. From the 'Four Laws of Behavior Change' to strategies like habit stacking, the book offers actionable advice that fits seamlessly into everyday life. Whether you're aiming for personal growth, improved productivity, or healthier routines, this book is a goldmine of strategies. It's not just about habits—it's about transforming the way you view progress and success.",
+      "totalPages": 320,
+      "rating": 4.8,
+      "category": "Self-help",
+      "tags": ["Productivity", "Personal Development", "Psychology"],
+      "publisher": "Avery",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 3,
+      "bookName": "Dune",
+      "author": "Frank Herbert",
+      "image": "https://example.com/dune.jpg",
+      "review": "Frank Herbert's 'Dune' is a science fiction masterpiece that transcends the genre, delving into themes of politics, religion, and human survival. Set on the desert planet of Arrakis, the story follows Paul Atreides as he navigates treachery, betrayal, and destiny. Herbert's intricate world-building is unparalleled, creating a vivid and immersive universe complete with its own ecology, culture, and socio-political dynamics. The narrative explores the power struggles over the coveted spice melange, a substance vital to the universe. The book's richly layered characters and profound philosophical undertones make it a thought-provoking read. 'Dune' is not just a story; it's an experience—a journey into a world that feels as real as our own.",
+      "totalPages": 412,
+      "rating": 4.6,
+      "category": "Science Fiction",
+      "tags": ["Epic", "Adventure", "Futuristic"],
+      "publisher": "Chilton Books",
+      "yearOfPublishing": 1965
+    },
+    {
+      "bookId": 4,
+      "bookName": "Becoming",
+      "author": "Michelle Obama",
+      "image": "https://example.com/becoming.jpg",
+      "review": "Michelle Obama's memoir, 'Becoming,' is a deeply personal and inspiring account of her life journey, from her childhood in Chicago to her years as First Lady of the United States. The book offers an intimate look at the experiences that shaped her, including her challenges as a woman of color navigating predominantly white spaces and her triumphs as a mother, wife, and leader. Obama writes with candor and warmth, sharing her thoughts on identity, resilience, and the pursuit of meaningful work. 'Becoming' is more than a memoir; it’s a powerful testament to the strength of the human spirit and the importance of hope and determination in the face of adversity.",
+      "totalPages": 448,
+      "rating": 4.7,
+      "category": "Biography",
+      "tags": ["Inspirational", "Memoir", "Leadership"],
+      "publisher": "Crown Publishing Group",
+      "yearOfPublishing": 2018
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://example.com/the_great_gatsby.jpg",
+      "review": "F. Scott Fitzgerald's 'The Great Gatsby' is a timeless exploration of wealth, ambition, and the elusive American Dream. Set in the Roaring Twenties, the novel follows the enigmatic Jay Gatsby and his unrelenting love for Daisy Buchanan. Through the eyes of narrator Nick Carraway, Fitzgerald paints a vivid portrait of an era defined by excess and disillusionment. The story's lyrical prose and poignant themes resonate deeply, revealing the fragility of dreams and the hollow pursuit of material success. This classic novel remains as relevant today as when it was first published, offering profound insights into the human condition and the complexities of love and ambition.",
+      "totalPages": 180,
+      "rating": 4.4,
+      "category": "Classic",
+      "tags": ["Romance", "Drama", "Tragedy"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 6,
+      "bookName": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "image": "https://example.com/sapiens.jpg",
+      "review": "In 'Sapiens: A Brief History of Humankind,' Yuval Noah Harari offers a compelling and comprehensive narrative of the history of our species. The book spans from the dawn of Homo sapiens in Africa to the modern age, exploring pivotal developments like the Cognitive Revolution, Agricultural Revolution, and Industrial Revolution. Harari's engaging storytelling and thought-provoking analysis challenge conventional perspectives, delving into topics such as human cooperation, societal structures, and the impact of technology. Whether discussing the role of shared myths or the ethical dilemmas posed by genetic engineering, 'Sapiens' is a fascinating journey through time that invites readers to reflect on humanity's past and future.",
+      "totalPages": 443,
+      "rating": 4.7,
+      "category": "Non-fiction",
+      "tags": ["History", "Anthropology", "Culture"],
+      "publisher": "Harvill Secker",
+      "yearOfPublishing": 2011
+    }
+  ]
+  
