@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { addToLS, checkLS } from "../utilities/localStorage";
+import toast, { Toaster } from 'react-hot-toast';
 
 const BookDetails = () => {
   const [read, setRead] = useState([]);
@@ -28,34 +29,35 @@ const BookDetails = () => {
   const handleWishListBtn = (id) => {
     const checkWishList = wishlist.find((book) => book == id);
     if (checkWishList) {
-      return console.log("already in wishlist");
+      return toast.error("Already in wishlist");
     } else {
       const checkReadList = read.find((book) => book == id);
       if (checkReadList) {
-        return console.log("already read the book");
+        return toast.error("Already read the book");
       }
       setWishList([...wishlist, id]);
       addToLS('wishlist', id);
-      console.log("added to wishlist");
+      toast.success('Successfully Added to Wishlist')
     }
   };
 
   const handleReadBtn = (id) => {
-    const checkRead = read.find((book) => book == id);
-    if (checkRead) {
+    // const checkRead = read.find((book) => book == id);
+    // console.log(checkRead);
+    if (read.includes(id)) {
      
-      return console.log("already read");
+      return toast.error("Already Read the book");
     }
     const updateRead = [...read, id];
     setRead(updateRead);
-    addToLS('read', id)
-    console.log("update read");
+    addToLS('read', id);
+    toast.success('Successfully Added to Read');
   };
 
   useEffect(()=>{
     const localStorageData = checkLS()
-    setRead(...read, localStorageData.read)
-    setWishList(...wishlist, localStorageData.wishlist)
+    setRead(...read, localStorageData.read || [])
+    setWishList(...wishlist, localStorageData.wishlist||[])
   },[])
 
   return (
@@ -113,6 +115,7 @@ const BookDetails = () => {
             >
               Wishlist
             </button>
+            <Toaster />
           </div>
         </div>
       </div>

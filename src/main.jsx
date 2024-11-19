@@ -23,7 +23,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/listedBook',
-        element:<ListedBook></ListedBook>
+        element:<ListedBook></ListedBook>,
+        loader:()=>fetch('data.json'),
       },
       {
         path:'/pagesToRead',
