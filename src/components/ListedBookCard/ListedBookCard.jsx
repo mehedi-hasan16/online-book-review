@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ListedBookCard = ({ book }) => {
   const {
@@ -11,6 +12,7 @@ const ListedBookCard = ({ book }) => {
     category,
     rating,
     image,
+    bookId
   } = book;
   return (
     <div className="font-bold border mb-8 rounded-xl">
@@ -32,7 +34,7 @@ const ListedBookCard = ({ book }) => {
             <div className="flex space-x-4">
               <p className="bg-blue-300 font-bold text-blue-600 p-3 rounded-full">Category: {category}</p>
               <p className="bg-yellow-300 font-bold text-yellow-600 p-3 rounded-full">Rating: {rating}</p>
-              <p className="bg-green-500 text-white font-bold p-3 rounded-full">View Details</p>
+              <Link to={`/bookDetails/${bookId}`}><p className="bg-green-500 text-white font-bold p-3 rounded-full">View Details</p></Link>
             </div>
           </div>
         </div>

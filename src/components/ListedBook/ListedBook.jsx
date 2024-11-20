@@ -4,27 +4,46 @@ import ListedBookCard from "../ListedBookCard/ListedBookCard";
 import { useLoaderData } from "react-router-dom";
 
 const ListedBook = () => {
-    const allBooks = useLoaderData();
+  const allBooks = useLoaderData();
   const [data, setData] = useState([]);
   const [showData, setShowData] = useState([]);
-console.log(showData);
+
   useEffect(() => {
     setData(allBooks);
-    const localStorageData = checkLS();
-    const readId= localStorageData.read;
-    const arr=[]
-    for( const id of readId){
-        const bookData = data.find(book=>book.bookId== id);
-        console.log(bookData);
-        if(bookData){
-
-            arr.push(bookData);
-        }
-    }
-    setShowData(arr)
-    // setWishList(...wishlist, localStorageData.wishlist || []);
-   console.log(arr);
+    handelLoadData('read', allBooks)
   }, [allBooks]);
+
+  const handelLoadData = (name, books) => {
+    const localStorageData = checkLS();
+    const getLsData = localStorageData[name];
+    const arr = [];
+    for (const id of getLsData) {
+      const bookData = books.find((book) => book.bookId == id);
+      if (bookData) {
+        arr.push(bookData);
+      }
+    }
+    setShowData(arr);
+  };
+
+ 
+
+  //   useEffect(() => {
+  //     const localStorageData = checkLS();
+  //     const getLsData = localStorageData.read;
+  //     const arr = [];
+  //     for (const id of getLsData) {
+  //       const bookData = data.find((book) => book.bookId == id);
+  //       if (bookData) {
+  //         arr.push(bookData);
+  //       }
+  //     }
+  //     setShowData(arr);
+
+  // }, [data]);
+ 
+
+  console.log(showData);
 
   return (
     <div>
@@ -52,14 +71,15 @@ console.log(showData);
           role="tab"
           className="tab"
           aria-label="WishList"
+          onClick={()=>handelLoadData('wishlist', data)}
         />
         <div
           role="tabpanel"
           className="tab-content bg-base-100 border-base-300 rounded-box p-6"
         >
-          {/* {wishlist.map((book) => (
+          {showData.map((book) => (
             <ListedBookCard key={book.bookId} book={book}></ListedBookCard>
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
