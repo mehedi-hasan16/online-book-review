@@ -15,9 +15,9 @@ const ListedBook = () => {
 
   const handelLoadData = (name, books) => {
     const localStorageData = checkLS();
-    const getLsData = localStorageData[name];
+    const getLsData = localStorageData[name] || [];
     const arr = [];
-    for (const id of getLsData) {
+    for (const id of getLsData ||[]) {
       const bookData = books.find((book) => book.bookId == id);
       if (bookData) {
         arr.push(bookData);
